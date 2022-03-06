@@ -9,13 +9,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'chmod +x -R ${env.WORKSPACE}'
         sh './jenkins/build.sh'
       }
     }
     stage('Login') {
       steps {
-        sh 'chmod +x -R ${env.WORKSPACE}'
         sh './jenkins/login.sh'
       }
     }
