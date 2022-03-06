@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t darinpope/dp-alpine:latest .
+docker build -t jacolmenares/jenkins-test:alpine-2.0 .
