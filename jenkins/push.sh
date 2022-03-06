@@ -1,2 +1,2 @@
 #!/bin/bash
-docker push darinpope/dp-alpine:latest
+docker push jacolmenares/jenkins-test:alpine-2.0
