@@ -11,7 +11,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh './jenkins/build.sh'
+        docker build -t jacolmenares/jenkins-test:$TAG_NAME .
       }
     }
     stage('Login') {
@@ -21,7 +21,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh './jenkins/push.sh'
+        docker push jacolmenares/jenkins-test:$TAG_NAME
       }
     }
   }
